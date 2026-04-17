@@ -72,10 +72,10 @@ def add_labels(df):
     max_cycles = df.groupby(0)[1].transform('max')
     df['rul'] = max_cycles - df[1]
     
-    df['fail_5'] = np.where(df['rul'] <= 50, 1, 0)
+    df['fail_5'] = np.where(df['rul'] <= 5, 1, 0)
     return df
 
-def sliding_window(df, sequence_length, feature_cols, pca_horizon=10):
+def sliding_window(df, sequence_length, feature_cols, pca_horizon=5):
     X = []
     y_rul = []
     y_fail = []
