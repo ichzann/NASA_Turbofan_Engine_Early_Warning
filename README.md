@@ -14,7 +14,7 @@ Predicts **Remaining Useful Life (RUL)**, **imminent failure**, and **PCA trajec
 | MODBNE ensemble (Zhang et al., 2016) | 15.04 | 334 |
 | CNN-LSTM-Attention (Li et al., 2023) | 15.98 | — |
 | CAELSTM / SOTA (2025) | 14.44 | — |
-| **This model (single LSTM, 64 units)** | **17.26** | **326.97** |
+| **This model (single LSTM on test data, 64 units)** | **16.97 cycles** | **354.36** |
 
 > The NASA Score is asymmetric — late predictions are penalised more heavily than early ones, making it arguably the more operationally meaningful metric. This model's score of **326.97 beats published multi-layer baselines** despite being a single-layer architecture.
 
